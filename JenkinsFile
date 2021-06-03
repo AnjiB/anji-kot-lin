@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    stages {
+    stage('Cleaning workspace') {
+        steps {
+            cleanWs()
+        }
+    }
+    stage('Checkout') {
+            steps {
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/AnjiB/anji-kot-lin']]])
+            }
+        } 
+    stage('Build Kotlin Project') {
+        steps {
+            echo 'Building..'
+            sh "pwd"
+            sh "./gradlew clean build"
+            echo 'Static code analysis using jacoco..'
+            sh "./gradlew jacocoTestReport"
+            step( [ $class: 'JacocoPublisher' ] )
+        }
+    }
+   }
+}
