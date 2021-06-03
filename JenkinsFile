@@ -16,9 +16,12 @@ pipeline {
             echo 'Building..'
             sh "pwd"
             sh "./gradlew clean build"
-            echo 'Static code analysis using jacoco..'
-            sh "./gradlew jacocoTestReport"
-            step( [ $class: 'JacocoPublisher' ] )
+        }
+    }
+    
+    stage('Static Code Analysis') {
+        steps {
+            jacoco buildOverBuild: true, changeBuildStatus: true, runAlways: true, skipCopyOfSrcFiles: true, sourcePattern: '**/src/main/kotlin/**'
         }
     }
    }
