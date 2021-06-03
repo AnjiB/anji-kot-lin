@@ -14,6 +14,7 @@ plugins {
     id("com.github.ben-manes.versions") version "0.26.0"
     id("com.adarshr.test-logger") version "2.0.0"
     application
+    id ("org.sonarqube") version "3.0"
 }
 
 application {
@@ -57,6 +58,7 @@ tasks.withType<Test> {
 tasks.jacocoTestReport {
     reports {
         xml.isEnabled = true
+        html.isEnabled = true
     }
 }
 
