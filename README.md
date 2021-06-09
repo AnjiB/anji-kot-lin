@@ -1,6 +1,6 @@
 # ![RealWorld Example App](logo.png)
 
-This repo is a copy of (Real-World-App)[https://github.com/alisabzevari/kotlin-http4k-realworld-example-app.git] which helps us to launch an application to be used for API Testing.
+This repo is a copy of [Real-World-App(https://github.com/alisabzevari/kotlin-http4k-realworld-example-app.git) which helps us to launch an application to be used for API Testing.
 
 For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
 
