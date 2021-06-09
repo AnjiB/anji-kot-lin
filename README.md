@@ -1,11 +1,6 @@
 # ![RealWorld Example App](logo.png)
 
-[![Java CI](https://github.com/alisabzevari/kotlin-http4k-realworld-example-app/workflows/Java%20CI/badge.svg)](https://github.com/alisabzevari/kotlin-http4k-realworld-example-app/actions)
-[![codecov](https://codecov.io/gh/alisabzevari/kotlin-http4k-realworld-example-app/branch/master/graph/badge.svg)](https://codecov.io/gh/alisabzevari/kotlin-http4k-realworld-example-app)
-
-> ### Kotlin + http4k codebase containing real world examples (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld) spec and API.
-
-This codebase was created to demonstrate a fully fledged fullstack application built with Kotlin + http4k + Exposed including CRUD operations, authentication, routing, pagination, and more.
+This repo is a copy of (Real-World-App)[https://github.com/alisabzevari/kotlin-http4k-realworld-example-app.git] which helps us to launch an application to be used for API Testing.
 
 For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
 
@@ -74,12 +69,3 @@ You need Java 11 installed.
 ./gradlew run
 ```
 The server will be available on `http://localhost:9000`
-
-# Contribution
-
-There are various ways to contribute to this project. Some of them are:
-* Just clone the project and play with it! This is the purpose of this project.
-* Create an issue if you find a bug or you have suggestions.
-* Fix bugs, improve code or documentation.
-* Write more tests for the project to increase the code coverage.
-* Or look at the issue with [help wanted](https://github.com/alisabzevari/kotlin-http4k-realworld-example-app/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+label%3A%22help+wanted%22) label.
