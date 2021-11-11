@@ -17,6 +17,7 @@ jobs:
     steps:
     - name: checkout code
       run: |
+        pwd
         ls
         mkdir anji
         ls
@@ -25,3 +26,7 @@ jobs:
         ls
         cd anji-kot-lin
         ls
+        cd ..
+        pwd
+        cd ..
+        pwd
