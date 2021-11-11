@@ -19,7 +19,9 @@ jobs:
       run: |
         ls
         mkdir anji
+        ls
         cd anji
         git clone https://github.com/AnjiB/anji-kot-lin.git
         ls
         cd anji-kot-lin
+        ls
